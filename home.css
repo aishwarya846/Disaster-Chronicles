@@ -6,10 +6,15 @@
 }
 
 body{
-    margin:0;
-    padding:0;
+
+    /* background-image: url("pexels-diego-giron-464799823-25652962.jpg"); */
+    background-position: center;
+    background-size: cover;
+
 }
 .section{
+    background-position: center;
+    background-size: cover;
     position: relative;
     width: 100%;
     height: 100vh;
@@ -17,48 +22,79 @@ body{
     align-items:center;
     justify-content:center;
     overflow:hidden;
+    
 }
 
-.section h1{
-    text-align: center;
-    font-size: 6.5rem;
-    color: rgba(255, 255, 255, 0.79);
-    font-family: 'League Spartan', sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
+.section2{
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding:20px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+
+}
+.section2 h1{
+    text-align:left;
+    font-size: 70pt;
+    color: rgba(248, 81, 81, 0.579);
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400; /* Bebas Neue only supports 400 weight */
+    position:relative;
+    top: -250px;
+    left: -100px;
     padding: 30px;
-    margin:15px;
-    z-index:1;
+    margin: 15px;
+    z-index: 1;
     border-radius: 10px;
+
+
 }
 
 nav {
-    display:flex;
+    display: flex;
     padding: 0px 10px;
-    justify-content: space-between;
+    justify-content: center; /* Center aligns all items */
     align-items: center;
-    position:absolute;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 80px;
-    display: flex;
     z-index: 1;
-    background-color:rgba(210, 183, 163, 0.3);
     overflow: hidden;
 }
-nav a {
-    color:rgb(0, 0, 0);
-    margin: 0 30px;
-    padding: 20px 20px;
-    font-size: 25px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Helvetica, sans-serif, Geneva, Tahoma, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif, 'Times New Roman', Times, serif, Helvetica, sans-serif, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Tahoma, Geneva, Verdana, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Arial Narrow', Arial, sans-serif;
-    text-decoration: none;
-    
 
+nav a {
+    color: rgba(255, 255, 255, 0.79);
+    margin: 0 15px; /* Reduce the space between links */
+    padding: 10px 20px; /* Adjust padding to make items smaller */
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
 }
-.video-container {
+
+.image-button {
+    left: 200px;
+    background-color: transparent;/* No background color for the button */
+    position: relative;
+    border: none;                   /* Remove the default button border */
+    padding: 0;                     /* Remove padding */
+    cursor: pointer;                /* Change cursor to pointer when hovered */
+    display: inline-block;           /* Align the button and image correctly */
+    transition: transform 0.3s ease;
+    width: 100%;                   /* Set the width of the image */
+    height: 100%;                  /* Set the height of the image */
+    object-fit: cover;              /* Ensure the image fills the area without distortion */
+    border-radius: 20px;            /* Optional: Add rounded corners to the image */
+    transition: transform 0.3s ease;/* Smooth transform transition */
+    /* overflow:hidden; */
+}
+/* .video-container {
     position: absolute;
     top: 0;
     left: 0;
@@ -75,7 +111,25 @@ nav a {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 90%;
+    opacity: 100%;
     transform: translate(-50%, -50%);
     z-index: 0;
+} */
+
+.bebas-neue-regular {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.section h1 {
+    text-align:center;
+    font-size: 120pt;
+    color: rgba(223, 223, 223, 0.788);
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400; /* Bebas Neue only supports 400 weight */
+    position: relative;
+    top: -150px;
+    padding: 30px;
+    margin: 15px;
+    z-index: 1;
+    border-radius: 10px;
 }
